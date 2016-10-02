@@ -2,7 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SaveData_Fragment">
+    tools:context=".SaveData_Fragment"
+    android:background="@color/highlighted_text_material_dark"
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/name_textViewID"
@@ -10,9 +12,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/name_editText"
+        android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:textStyle="bold"/>
+        android:layout_alignParentStart="true"
+        android:textColor="@color/bright_foreground_inverse_material_dark"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/name_editTextID"
@@ -20,8 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:hint="@string/name_editText"
-        android:layout_below="@id/name_textViewID"
-        android:layout_alignParentLeft="true"/>
+        android:layout_below="@+id/name_textViewID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
 
     <TextView
         android:id="@+id/roll_textViewID"
@@ -29,9 +36,13 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/roll_editText"
-        android:layout_below="@id/name_editTextID"
+        android:textStyle="bold"
+        android:layout_below="@+id/name_editTextID"
         android:layout_alignParentLeft="true"
-        android:textStyle="bold" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/roll_editTextID"
@@ -39,7 +50,10 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:hint="@string/roll_editText"
-        android:layout_below="@id/roll_textViewID"/>
+        android:layout_below="@+id/roll_textViewID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
 
     <TextView
         android:id="@+id/interest_textViewID"
@@ -47,9 +61,13 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/interest_editText"
-        android:layout_below="@id/roll_editTextID"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_below="@+id/roll_editTextID"
         android:layout_alignParentLeft="true"
-        android:textStyle="bold" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp" />
 
     <EditText
         android:id="@+id/interest_editTextID"
@@ -57,30 +75,39 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:hint="@string/interest_editText"
-        android:layout_below="@id/interest_textViewID"
-        android:layout_alignParentLeft="true"/>
+        android:layout_below="@+id/interest_textViewID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
 
     <Button
         android:id="@+id/save_buttonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/save_button"
-        android:layout_below="@id/interest_editTextID"/>
+        android:layout_alignTop="@+id/submit_buttonID"
+        android:layout_toLeftOf="@+id/submit_buttonID"
+        android:layout_toStartOf="@+id/submit_buttonID"
+        android:textColor="@color/abc_input_method_navigation_guard" />
 
     <Button
         android:id="@+id/submit_buttonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/submit_button"
-        android:layout_below="@id/interest_editTextID"
-        android:layout_toRightOf="@id/save_buttonID"/>
+        android:layout_alignTop="@+id/sql_buttonID"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/abc_primary_text_material_light" />
 
     <Button
         android:id="@+id/sql_buttonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sql_button"
-        android:layout_below="@id/interest_editTextID"
-        android:layout_toRightOf="@id/submit_buttonID"/>
+        android:layout_below="@+id/interest_editTextID"
+        android:layout_toRightOf="@+id/submit_buttonID"
+        android:layout_toEndOf="@+id/submit_buttonID"
+        android:layout_marginTop="62dp"
+        android:textColor="@color/abc_primary_text_material_light" />
 
 </RelativeLayout>

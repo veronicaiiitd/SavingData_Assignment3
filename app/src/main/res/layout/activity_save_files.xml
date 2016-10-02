@@ -2,25 +2,55 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/highlighted_text_material_light">
+
+    <TextView
+        android:id="@+id/showTitle_textViewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/showTitle"
+        android:padding="16dp"
+        android:textColor="@color/abc_search_url_text_pressed"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_above="@+id/showData_textViewID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="100dp"/>
 
     <TextView
         android:id="@+id/showData_textViewID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"/>
+        android:layout_marginBottom="115dp"
+        android:layout_above="@+id/internal_buttonID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/abc_input_method_navigation_guard" />
 
     <Button
         android:id="@+id/internal_buttonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/internal_button"
-        android:layout_below="@id/showData_textViewID"/>
+        android:textColor="@color/abc_search_url_text_pressed"
+        android:layout_marginBottom="156dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/showTitle_textViewID"
+        android:layout_alignStart="@+id/showTitle_textViewID" />
 
     <Button
         android:id="@+id/external_buttonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/external_button"/>
+        android:text="@string/external_button"
+        android:layout_marginRight="72dp"
+        android:layout_marginEnd="72dp"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:layout_below="@+id/showData_textViewID"
+        android:layout_alignRight="@+id/showTitle_textViewID"
+        android:layout_alignEnd="@+id/showTitle_textViewID" />
 
 </RelativeLayout>

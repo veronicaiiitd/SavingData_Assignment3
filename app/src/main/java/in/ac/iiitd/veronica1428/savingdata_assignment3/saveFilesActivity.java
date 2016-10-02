@@ -63,7 +63,7 @@ public class saveFilesActivity extends Activity{
 
                try{
 
-                   String combine = name + "\n" + roll + "\n" + interest;
+                   String combine = name + " | " + roll + " | " + interest;
                    outputStream = openFileOutput("form.txt", MODE_PRIVATE);
                    outputStream.write(combine.getBytes());
                    outputStream.close();
@@ -90,7 +90,7 @@ public class saveFilesActivity extends Activity{
                FileOutputStream outputStream;
 
                try{
-                   String combine = name + "\n" + roll + "\n" + interest;
+                   String combine = name + " | " + roll + " | " + interest;
                    outputStream = new FileOutputStream(file);
                    outputStream.write(combine.getBytes());
                    outputStream.close();

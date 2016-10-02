@@ -11,9 +11,12 @@
     <string name="Roll">RollKey</string>
     <string name="interest">interestKey</string>
     <string name="internalFileName">formFileInternal</string>
+    <string name="showTitle">Shared Preference Example</string>
 
     <string name="showField_button">Show Fields</string>
 
     <string name="internal_button">Internal</string>
     <string name="external_button">External</string>
+
+    <string name="showSqlFields_button">Read SQL Data</string>
 </resources>

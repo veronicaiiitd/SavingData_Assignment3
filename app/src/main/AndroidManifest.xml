@@ -21,6 +21,8 @@
         <activity android:name=".ShowFieldsActivity"></activity>
 
         <activity android:name=".saveFilesActivity"></activity>
+
+        <activity android:name=".SQLiteSaveActivity"></activity>
     </application>
 
 </manifest>

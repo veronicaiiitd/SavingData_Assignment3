@@ -99,7 +99,15 @@ public class SaveData_Fragment extends Fragment{
         sqlButton.setOnClickListener(new View.OnClickListener(){
            @Override
             public void onClick(View v){
+               String name = nameEditText.getText().toString();
+               String roll = rollNumberEditText.getText().toString();
+               String interest = interestedEditText.getText().toString();
 
+               Intent intent = new Intent(getActivity(), SQLiteSaveActivity.class);
+               intent.putExtra(SQLiteSaveActivity.nameIntent, name);
+               intent.putExtra(SQLiteSaveActivity.rollIntent, roll);
+               intent.putExtra(SQLiteSaveActivity.interestIntent, interest);
+               startActivity(intent);
            }
         });
 
