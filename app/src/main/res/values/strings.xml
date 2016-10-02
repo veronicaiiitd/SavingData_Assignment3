@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SavingData_Assignment3</string>
+    <string name="name_editText">Enter Full Name</string>
+    <string name="roll_editText">Enter Roll Number</string>
+    <string name="interest_editText">Are you interested in the event?</string>
+    <string name="submit_button">Save and Submit</string>
+    <string name="save_button">Save</string>
+    <string name="sql_button">SQL</string>
+    <string name="SHARED_PREFERENCE_FILE_KEY">in.ac.iiitd.veronica1428.SHARED_PREFERENCE_FILE_KEY</string>
+    <string name="Name">NameKey</string>
+    <string name="Roll">RollKey</string>
+    <string name="interest">interestKey</string>
+    <string name="internalFileName">formFileInternal</string>
+
+    <string name="showField_button">Show Fields</string>
+
+    <string name="internal_button">Internal</string>
+    <string name="external_button">External</string>
+</resources>

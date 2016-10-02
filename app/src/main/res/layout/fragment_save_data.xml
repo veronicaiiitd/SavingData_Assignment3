@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveData_Fragment">
+
+    <TextView
+        android:id="@+id/name_textViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/name_editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/name_editTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/name_editText"
+        android:layout_below="@id/name_textViewID"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/roll_textViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/roll_editText"
+        android:layout_below="@id/name_editTextID"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/roll_editTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/roll_editText"
+        android:layout_below="@id/roll_textViewID"/>
+
+    <TextView
+        android:id="@+id/interest_textViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/interest_editText"
+        android:layout_below="@id/roll_editTextID"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/interest_editTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/interest_editText"
+        android:layout_below="@id/interest_textViewID"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/save_buttonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_button"
+        android:layout_below="@id/interest_editTextID"/>
+
+    <Button
+        android:id="@+id/submit_buttonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_button"
+        android:layout_below="@id/interest_editTextID"
+        android:layout_toRightOf="@id/save_buttonID"/>
+
+    <Button
+        android:id="@+id/sql_buttonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sql_button"
+        android:layout_below="@id/interest_editTextID"
+        android:layout_toRightOf="@id/submit_buttonID"/>
+
+</RelativeLayout>
