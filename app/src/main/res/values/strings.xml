@@ -12,6 +12,8 @@
     <string name="interest">interestKey</string>
     <string name="internalFileName">formFileInternal</string>
     <string name="showTitle">Shared Preference Example</string>
+    <string name="title">Internal External Save Files</string>
+    <string name="sqltitle">SQLite Example</string>
 
     <string name="showField_button">Show Fields</string>
 

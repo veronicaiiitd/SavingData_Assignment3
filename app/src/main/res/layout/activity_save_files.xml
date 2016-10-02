@@ -28,7 +28,11 @@
         android:layout_above="@+id/internal_buttonID"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textColor="@color/abc_input_method_navigation_guard" />
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:padding="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/internal_buttonID"

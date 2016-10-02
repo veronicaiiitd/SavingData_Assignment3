@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,11 +19,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ShowFieldsActivity"></activity>
+        <activity android:name=".ShowFieldsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name" />
 
-        <activity android:name=".saveFilesActivity"></activity>
+        <activity android:name=".saveFilesActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name" />
 
-        <activity android:name=".SQLiteSaveActivity"></activity>
+        <activity android:name=".SQLiteSaveActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

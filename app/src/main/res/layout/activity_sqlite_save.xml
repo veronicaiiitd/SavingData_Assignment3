@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/highlighted_text_material_light">
 
     <TextView
         android:id="@+id/sqlFields_textViewID"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
 
     <Button
         android:id="@+id/showSqlFields_buttonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/showSqlFields_button"/>
+        android:text="@string/showSqlFields_button"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="144dp" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sqltitle"
+        android:padding="16dp"
+        android:textColor="@color/abc_search_url_text_pressed"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/sqlFields_textViewID"
+        android:layout_alignStart="@+id/sqlFields_textViewID"
+        android:layout_marginLeft="77dp"
+        android:layout_marginStart="77dp" />
+
+</RelativeLayout>
